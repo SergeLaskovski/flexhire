@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b2fc5be37d39fd51b69e8affaf716ce",
+    "revision": "6484010de8a7e496b6b46a6524aa0c54",
     "url": "/flexhire/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flexhire/static/css/2.3bf2db42.chunk.css"
   },
   {
-    "revision": "dac22dc10b9c532924da",
+    "revision": "32192749e01e87c23e6a",
     "url": "/flexhire/static/css/main.81ae3604.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flexhire/static/js/2.9f14a8c5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dac22dc10b9c532924da",
-    "url": "/flexhire/static/js/main.b5805cb9.chunk.js"
+    "revision": "32192749e01e87c23e6a",
+    "url": "/flexhire/static/js/main.d51758b8.chunk.js"
   },
   {
     "revision": "deb8816d782be3f14b2c",
