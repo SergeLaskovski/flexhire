@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+@import 'Defaults';
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+  font-size: 16px;
+  color: $text-footer;
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+}
+body,
+html,
+.container-fluid {
+  height: 100%;
+}
+h1 {
+  font-size: 35px;
+  color: $blue;
+  @include media-breakpoint-down(md) {
+    font-size: 30px;
+  }
+}
+
+/*
+div {
+  border: 1px solid #cccccc;
+}
+*/

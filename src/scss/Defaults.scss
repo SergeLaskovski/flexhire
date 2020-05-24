@@ -1,0 +1,29 @@
+@import '~bootstrap/scss/bootstrap';
+
+$theme-colors: (
+  'primary': #389ba3,
+);
+
+$header-grey: #fafafa;
+$search-grey: #ededed;
+$search-grey-text: #aaaaaa;
+$text-black: #000;
+$text-footer: #616161;
+$text-black: #141414;
+$blue: #389ba3;
+$shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) !important;
+
+.btn {
+  border-radius: 1.5rem !important;
+  width: 206px !important;
+  height: 50px !important;
+  font-size: 20px !important;
+  color: #eeeeee !important;
+  box-shadow: $shadow !important;
+  background-color: $blue !important;
+  @include media-breakpoint-down(md) {
+    width: 160px !important;
+    height: 40px !important;
+    font-size: 16px !important;
+  }
+}

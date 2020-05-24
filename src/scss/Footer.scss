@@ -1,0 +1,59 @@
+@import 'Defaults';
+
+.footer-container {
+  margin: 100px 0px 100px 0px;
+  justify-content: space-around;
+  @include media-breakpoint-down(sm) {
+    height: 185px;
+    padding: 30px 0px 30px 0px;
+    justify-content: center;
+  }
+  color: $text-footer;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.footer-logo-wrapper {
+  text-align: left;
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}
+
+.footer-logo img {
+  max-height: 50px;
+  margin-bottom: 30px;
+  display: block;
+  @include media-breakpoint-down(md) {
+    max-height: 40px;
+  }
+}
+
+.footer-links {
+  display: block;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  color: $text-black;
+  line-height: 30px;
+}
+
+.footer-links a,
+a:visited {
+  display: block;
+  line-height: 30px;
+  text-decoration: none;
+  color: $text-footer;
+}
+.footer-links a:hover {
+  text-decoration: none;
+  color: $text-black;
+}

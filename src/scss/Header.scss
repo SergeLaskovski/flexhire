@@ -1,0 +1,92 @@
+@import 'Defaults';
+
+.header-container {
+  height: 101px;
+  background-color: $header-grey;
+  padding: 20px 0px 33px 0px;
+  @include media-breakpoint-down(sm) {
+    height: 50px;
+    padding: 10px 0px 10px 0px;
+  }
+}
+.header-logo-search {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  @include media-breakpoint-down(sm) {
+    justify-content: space-between;
+  }
+}
+.header-logo {
+  display: inline-block;
+}
+.header-logo img {
+  max-height: 45px;
+  margin-left: 52px;
+  @include media-breakpoint-down(sm) {
+    margin-left: 15px;
+    max-height: 25px;
+  }
+}
+.search-input {
+  margin-left: 30px;
+  max-width: 350px;
+}
+.search-ico {
+  width: 25px;
+}
+.search-input input:focus {
+  box-shadow: none;
+}
+.form-control::-webkit-input-placeholder {
+  color: $search-grey-text !important;
+}
+.search-input .input-group > .custom-select:not(:first-child),
+.input-group > .form-control:not(:first-child) {
+  border-radius: 15.5px;
+  max-height: 31px;
+  background-color: $search-grey;
+  font-size: 15px;
+  font-weight: bold;
+  color: $search-grey-text;
+  border: none;
+  margin: 0px;
+}
+
+.search-input .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
+.input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .input-group-text,
+.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .input-group-text {
+  border-radius: 15.5px;
+  max-height: 31px;
+  background-color: $search-grey;
+  border: none;
+  margin: 0px;
+}
+
+.header-phone img {
+  width: 18px;
+}
+.header-phone span {
+  font-size: 16px;
+  line-height: 1;
+  margin: 0px 0px 0px 15px;
+  font-weight: bold;
+}
+.header-phone a {
+  text-decoration: none;
+  color: $text-black;
+}
+.header-phone a:hover {
+  text-decoration: none;
+  color: $search-grey-text;
+}
+.hamburger {
+  width: 33px;
+  margin-right: 0px;
+  @include media-breakpoint-up(md) {
+    margin-right: 21px;
+  }
+}
