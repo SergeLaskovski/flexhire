@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/flexhire/static/css/main.81ae3604.chunk.css",
-    "main.js": "/flexhire/static/js/main.00884c64.chunk.js",
-    "main.js.map": "/flexhire/static/js/main.00884c64.chunk.js.map",
-    "runtime-main.js": "/flexhire/static/js/runtime-main.d190697e.js",
-    "runtime-main.js.map": "/flexhire/static/js/runtime-main.d190697e.js.map",
-    "static/css/2.3bf2db42.chunk.css": "/flexhire/static/css/2.3bf2db42.chunk.css",
-    "static/js/2.9f14a8c5.chunk.js": "/flexhire/static/js/2.9f14a8c5.chunk.js",
-    "static/js/2.9f14a8c5.chunk.js.map": "/flexhire/static/js/2.9f14a8c5.chunk.js.map",
-    "index.html": "/flexhire/index.html",
-    "precache-manifest.4c368e2256c5f380e5afc667931c38dc.js": "/flexhire/precache-manifest.4c368e2256c5f380e5afc667931c38dc.js",
-    "service-worker.js": "/flexhire/service-worker.js",
-    "static/css/2.3bf2db42.chunk.css.map": "/flexhire/static/css/2.3bf2db42.chunk.css.map",
-    "static/css/main.81ae3604.chunk.css.map": "/flexhire/static/css/main.81ae3604.chunk.css.map",
-    "static/js/2.9f14a8c5.chunk.js.LICENSE.txt": "/flexhire/static/js/2.9f14a8c5.chunk.js.LICENSE.txt",
-    "static/media/headerLogo.png": "/flexhire/static/media/headerLogo.e8c342df.png"
+    "main.css": "/flexhire-test/static/css/main.cd7f85db.chunk.css",
+    "main.js": "/flexhire-test/static/js/main.4da9b981.chunk.js",
+    "main.js.map": "/flexhire-test/static/js/main.4da9b981.chunk.js.map",
+    "runtime-main.js": "/flexhire-test/static/js/runtime-main.029240cc.js",
+    "runtime-main.js.map": "/flexhire-test/static/js/runtime-main.029240cc.js.map",
+    "static/css/2.3bf2db42.chunk.css": "/flexhire-test/static/css/2.3bf2db42.chunk.css",
+    "static/js/2.1ecdf0a8.chunk.js": "/flexhire-test/static/js/2.1ecdf0a8.chunk.js",
+    "static/js/2.1ecdf0a8.chunk.js.map": "/flexhire-test/static/js/2.1ecdf0a8.chunk.js.map",
+    "index.html": "/flexhire-test/index.html",
+    "precache-manifest.a86c194a18f2c30b7d1ef5ea68ca89e0.js": "/flexhire-test/precache-manifest.a86c194a18f2c30b7d1ef5ea68ca89e0.js",
+    "service-worker.js": "/flexhire-test/service-worker.js",
+    "static/css/2.3bf2db42.chunk.css.map": "/flexhire-test/static/css/2.3bf2db42.chunk.css.map",
+    "static/css/main.cd7f85db.chunk.css.map": "/flexhire-test/static/css/main.cd7f85db.chunk.css.map",
+    "static/js/2.1ecdf0a8.chunk.js.LICENSE.txt": "/flexhire-test/static/js/2.1ecdf0a8.chunk.js.LICENSE.txt",
+    "static/media/headerLogo.png": "/flexhire-test/static/media/headerLogo.e8c342df.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d190697e.js",
+    "static/js/runtime-main.029240cc.js",
     "static/css/2.3bf2db42.chunk.css",
-    "static/js/2.9f14a8c5.chunk.js",
-    "static/css/main.81ae3604.chunk.css",
-    "static/js/main.00884c64.chunk.js"
+    "static/js/2.1ecdf0a8.chunk.js",
+    "static/css/main.cd7f85db.chunk.css",
+    "static/js/main.4da9b981.chunk.js"
   ]
 }
