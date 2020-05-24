@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/flexhire/precache-manifest.23f877dad4b7e8080b13d833297c0f98.js"
+  "/flexhire/precache-manifest.4c368e2256c5f380e5afc667931c38dc.js"
 );
 
 self.addEventListener('message', (event) => {
