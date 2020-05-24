@@ -20,6 +20,10 @@
 .footer-logo-wrapper {
   text-align: left;
   @include media-breakpoint-down(md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 }

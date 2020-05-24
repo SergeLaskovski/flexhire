@@ -21,6 +21,7 @@ $shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19) !impor
   color: #eeeeee !important;
   box-shadow: $shadow !important;
   background-color: $blue !important;
+  border: none !important;
   @include media-breakpoint-down(md) {
     width: 160px !important;
     height: 40px !important;

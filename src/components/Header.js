@@ -1,12 +1,12 @@
 import React from 'react';
 
-import '@/scss/Header.scss';
+import '../scss/Header.scss';
 
 import {Container, Row, Col, Image, InputGroup, FormControl} from 'react-bootstrap';
-import headerLogo from '@/assets/images/headerLogo.png';
-import searchIco from '@/assets/images/searchIco.png';
-import phone from '@/assets/images/phone.png';
-import hamburger from '@/assets/images/hamburger.png';
+import headerLogo from '../assets/images/headerLogo.png';
+import searchIco from '../assets/images/searchIco.png';
+import phone from '../assets/images/phone.png';
+import hamburger from '../assets/images/hamburger.png';
 
 function Header() {
   return (

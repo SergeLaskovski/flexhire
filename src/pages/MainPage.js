@@ -1,16 +1,18 @@
 import React, {useState} from 'react';
-import '@/scss/Carousel.scss';
-import greyBlock from '@/assets/images/greyBlock.png';
+import '../scss/Carousel.scss';
+import greyBlock from '../assets/images/greyBlock.png';
+import bg1 from '../assets/images/bg-1.png';
 
 import {Container, Button, Row, Col} from 'react-bootstrap';
+
+//get data
+import carouselData from '../data/carousel';
 
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
-//get data
-import carouselData from '@/data/carousel';
-
 function MainPage() {
+  console.log(carouselData);
   const [value, setValue] = useState(0);
 
   function slides(carouselData, selected) {
@@ -19,24 +21,13 @@ function MainPage() {
     carouselData.map((carouselItem, index) => {
       selectedClass = index === selected ? ' selected' : '';
       slidesArr.push(
-        <div className="carousel-img-container" key={`carousel-div-img-${index}`}>
+        <div className="car-img-container" key={`carousel-div-img-${index}`}>
           <img src={carouselItem.img} alt={carouselItem.title} className={`carousel-img ${selectedClass}`} />
         </div>
       );
       return slidesArr;
     });
     return slidesArr;
-  }
-
-  function drawDots(quantity, selected) {
-    let dots = [];
-    let selectedClass = '';
-    for (let i = 0; i < quantity; i++) {
-      selectedClass = i === selected ? 'dot-selected' : '';
-      dots.push(<span className={selectedClass} key={`dot-span-${i}`}></span>);
-    }
-    console.log(dots);
-    return dots.map((dot) => dot);
   }
 
   return (
@@ -47,7 +38,7 @@ function MainPage() {
           <h1 className="carousel-h1">{carouselData[value].title}</h1>
         </Col>
       </Row>
-      <Row>
+      <Row className="car-row">
         <Col xs={12}>
           <Carousel
             centered
@@ -56,12 +47,14 @@ function MainPage() {
             value={value}
             onChange={(value) => setValue(value)}
             slides={slides(carouselData, value)}
-          ></Carousel>
+          />
         </Col>
       </Row>
       <Row className="justify-content-center">
         <Col xs="auto" className="dots-div">
-          {drawDots(carouselData.length, value)}
+          {carouselData.map((carouselItem, index) => (
+            <span className={index === value ? 'dot-selected' : ''} key={`dot-span-${index}`}></span>
+          ))}
         </Col>
       </Row>
       <Row className="justify-content-center">

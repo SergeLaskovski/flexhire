@@ -1,9 +1,9 @@
 import React from 'react';
 
-import '@/scss/Footer.scss';
+import '../scss/Footer.scss';
 
-import {Container, Row, Col, Image, InputGroup, FormControl} from 'react-bootstrap';
-import headerLogo from '@/assets/images/headerLogo.png';
+import {Container, Row, Col, Image} from 'react-bootstrap';
+import headerLogo from '../assets/images/headerLogo.png';
 
 function Footer() {
   return (
@@ -11,7 +11,7 @@ function Footer() {
       <Row className="footer-container justify-content-center">
         <Col md={3} sm={12} className="footer-logo">
           <div className="footer-logo-wrapper">
-            <Image src={headerLogo} />
+            <Image src={headerLogo} className="d-block" />
             ©Copyright 2020 Flexhire - Website
             <br /> Design & Development by The Web Guys
           </div>

@@ -8,7 +8,7 @@
   height: 90px;
 }
 
-.carousel-img-container {
+.car-img-container {
   height: 400px;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
     height: 365px;
   }
 }
-.carousel-img-container img {
+.car-img-container img {
   border-radius: 15px;
   max-height: 80%;
   @include media-breakpoint-down(lg) {
@@ -27,12 +27,12 @@
     object-fit: cover;
   }
   box-shadow: $shadow;
-  opacity: 50%;
+  opacity: 0.5;
   transition: all 0.5s ease-in-out;
 }
-.carousel-img-container .selected {
+.car-img-container .selected {
   max-height: 100%;
-  opacity: 100%;
+  opacity: 1;
   transition: all 0.5s ease-in-out;
   @include media-breakpoint-down(md) {
     height: 365px;
@@ -49,10 +49,10 @@
   border-radius: 50%;
   display: inline-block;
   margin: 3px;
-  opacity: 50%;
+  opacity: 0.5;
 }
 .dots-div .dot-selected {
-  opacity: 100%;
+  opacity: 1;
   height: 9px;
   width: 9px;
 }
