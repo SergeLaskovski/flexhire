@@ -4,16 +4,22 @@
 
 body {
   font-family: 'IBM Plex Sans', sans-serif !important;
-  font-size: 16px;
-  color: $text-footer;
+  font-size: 16px !important;
+  font-weight: 200 !important;
+  color: $text-body !important;
+  min-height: 600px;
   @include media-breakpoint-down(md) {
     font-size: 14px;
   }
+  position: relative;
+  z-index: 0;
 }
 body,
 html,
 .container-fluid {
   height: 100%;
+  position: relative;
+  z-index: 0;
 }
 h1 {
   font-size: 35px;
@@ -22,7 +28,24 @@ h1 {
     font-size: 30px;
   }
 }
-
+h2 {
+  font-size: 25px;
+  color: $text-black;
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+  }
+}
+h4 {
+  font-size: 18px;
+  color: $text-black;
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+  }
+  padding: 15px 0px 15px 0px;
+}
+.global-icons {
+  color: $blue;
+}
 /*
 div {
   border: 1px solid #cccccc;

@@ -1,0 +1,46 @@
+@import 'Defaults';
+
+.bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+  @include media-breakpoint-down(sm) {
+    width: 24px;
+    height: 24px;
+    right: 20px;
+    top: 15px;
+  }
+}
+
+.bm-cross,
+.bm-burger-bars {
+  background: $text-black;
+}
+
+.bm-menu-wrap {
+  padding-top: -101px;
+}
+.navigation-container {
+  height: 100%;
+  padding: 50px 50px 50px 150px;
+  background-color: $white;
+  @include media-breakpoint-down(md) {
+    padding: 20px 20px 20px 50px;
+  }
+}
+.menu-item {
+  font-size: 16px;
+  padding: 8px;
+}
+
+.navigation-container a,
+.navigation-container a:visited {
+  text-decoration: none;
+  color: $text-black;
+}
+.navigation-container a:hover {
+  text-decoration: none;
+  color: $blue;
+}

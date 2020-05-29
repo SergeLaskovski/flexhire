@@ -1,0 +1,15 @@
+@import 'Defaults';
+
+.about-container {
+  padding-bottom: 50px;
+}
+.about-container h1 {
+  padding-top: 100px;
+}
+.about-container h2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-text {
+  background-color: $header-grey;
+}

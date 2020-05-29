@@ -1,18 +1,15 @@
 import React, {useState} from 'react';
-import '../scss/Carousel.scss';
-import greyBlock from '../assets/images/greyBlock.png';
-import bg1 from '../assets/images/bg-1.png';
+import '@/scss/MainPage.scss';
 
-import {Container, Button, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 
 //get data
-import carouselData from '../data/carousel';
+import mainSections from '@/data/mainSections';
 
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
 function MainPage() {
-  console.log(carouselData);
   const [value, setValue] = useState(0);
 
   function slides(carouselData, selected) {
@@ -34,34 +31,42 @@ function MainPage() {
     <Container fluid>
       <Row>
         <Col xs={12} className="text-center">
-          <img src={greyBlock} className="grey-block" alt="grey block :)" />
-          <h1 className="carousel-h1">{carouselData[value].title}</h1>
+          <h1 className="carousel-h1">{mainSections[value].title} for hire</h1>
         </Col>
       </Row>
       <Row className="car-row">
         <Col xs={12}>
           <Carousel
+            breakpoints={{
+              640: {
+                slidesPerPage: 1,
+                arrows: true,
+                centered: false,
+              },
+            }}
             centered
             clickToChange
             slidesPerPage={2}
             value={value}
             onChange={(value) => setValue(value)}
-            slides={slides(carouselData, value)}
+            slides={slides(mainSections, value)}
           />
         </Col>
       </Row>
       <Row className="justify-content-center">
         <Col xs="auto" className="dots-div">
-          {carouselData.map((carouselItem, index) => (
+          {mainSections.map((carouselItem, index) => (
             <span className={index === value ? 'dot-selected' : ''} key={`dot-span-${index}`}></span>
           ))}
         </Col>
       </Row>
+      {/*
       <Row className="justify-content-center">
         <Col xs="auto">
           <Button variant="primary">Hire now</Button>
         </Col>
       </Row>
+      */}
     </Container>
   );
 }

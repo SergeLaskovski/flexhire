@@ -1,5 +1,22 @@
 @import 'Defaults';
 
+.header-placeholder {
+  height: 101px;
+  @include media-breakpoint-down(sm) {
+    height: 50px;
+  }
+}
+.header-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 101px;
+  @include media-breakpoint-down(sm) {
+    height: 50px;
+  }
+}
+
 .header-container {
   height: 101px;
   background-color: $header-grey;
@@ -9,6 +26,7 @@
     padding: 10px 0px 10px 0px;
   }
 }
+
 .header-logo-search {
   display: flex;
   align-items: flex-end;
@@ -84,9 +102,14 @@
   color: $search-grey-text;
 }
 .hamburger {
-  width: 33px;
+  color: $text-black;
+  size: 4rem;
   margin-right: 0px;
   @include media-breakpoint-up(md) {
     margin-right: 21px;
   }
+  cursor: pointer;
+}
+.hamburger:hover {
+  color: $search-grey-text;
 }
